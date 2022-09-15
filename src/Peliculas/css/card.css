@@ -4,6 +4,7 @@
 display: grid;
 grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
 margin-top: 50px;
+
 background-color: rgba(88, 87, 87, 0.153);
 padding: 20px;
 box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.649) 0px 10px 10px;
@@ -15,7 +16,7 @@ box-shadow: rgba(13, 13, 14, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
 
 .card-grid div {
 display: grid;
-
+margin: auto;
 
 
 }
@@ -23,6 +24,7 @@ display: grid;
 .card{
 
 width: 300px;
+height: 500px;
 justify-content: center;
 border-radius: 20px;
 box-shadow: rgba(12, 12, 12, 0.729) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
