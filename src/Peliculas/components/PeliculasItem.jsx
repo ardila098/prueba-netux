@@ -15,15 +15,18 @@ export const PeliculasItem = ({imdbID,Year,Title,Poster,}) => {
           
           <img src={Poster} alt={Title} />
 
+<div className='details'>
+
           <p>{Title}</p>
 
 <h2>{Year}</h2>
 
 
 
-<Link to={`/peliculas/${imdbID}`}>
-Mas..
+<Link className='linkdetalle' to={`/peliculas/${imdbID}`}>
+Mas Detalles ..
 </Link>
+</div>
 
 
     </div>

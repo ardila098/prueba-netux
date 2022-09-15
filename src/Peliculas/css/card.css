@@ -1,31 +1,87 @@
 
 .card-grid{
-
+    
 display: grid;
 grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
 margin-top: 50px;
-
-
+background-color: rgba(88, 87, 87, 0.153);
+padding: 20px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.649) 0px 10px 10px;
+row-gap: 50px;
+border-radius: 20px;
+box-shadow: rgba(13, 13, 14, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 
 .card-grid div {
 display: grid;
-margin: auto;
-row-gap: 20px;
+
+
 
 }
 
 .card{
 
 width: 300px;
-
+justify-content: center;
+border-radius: 20px;
+box-shadow: rgba(12, 12, 12, 0.729) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+background-color: rgba(12, 8, 8, 0.36);
+color: white;
 }
 
 
 .card img{
-
+margin-top: 20px;
 width: 250px;
+border-radius: 20px;
 
 
 }
+
+
+.cardDetalle{
+    margin-top: 60px;
+display: grid;
+    width: 500px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.938) 0px 30px 60px -12px inset, rgba(248, 246, 246, 0.927) 0px 18px 36px -18px inset;
+    background-color: rgba(238, 233, 233, 0.36);
+    color: black;
+    }
+
+
+    .details{
+        display: grid;
+        text-align: center;
+      
+        align-self: center;
+
+    }
+
+
+    .cardDetalle img{
+        
+        width: 250px;
+        border-radius: 20px;
+        
+        
+        }
+
+
+        .btn {
+align-items: flex-end;
+            border-radius: 10px;
+            border: 1px solid;
+            color: rgb(61, 106, 91);
+
+        }
+
+        .linkdetalle {
+            text-decoration: none;
+            color: rgba(235, 244, 241, 0.726);
+        }
+
+ 

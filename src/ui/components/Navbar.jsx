@@ -5,7 +5,15 @@ export const Navbar = () => {
   return (
 
 
-    <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2">
+    <nav className="navbar navbar-expand-sm navbar-dark ">
+
+
+<Link 
+        className="navbar-brand iconMovies" 
+        to="/"
+    >
+       <img src="https://res.cloudinary.com/doe7vtjfk/image/upload/v1663269662/prueba/icons8-movie-64_prjaun.png" alt="" />
+    </Link>
             
     <Link 
         className="navbar-brand" 
@@ -17,36 +25,7 @@ export const Navbar = () => {
     <div className="navbar-collapse">
         <div className="navbar-nav">
 
-            <NavLink 
-                className="nav-item nav-link" 
-                to="/series"
-            >
-                Series
-            </NavLink>
 
-            <NavLink 
-                className="nav-item nav-link" 
-                to="/estrenos"
-            >
-                Estrenos
-            </NavLink>
-
-
-  
-
-            <NavLink 
-                className="nav-item nav-link" 
-                to="/search"
-            >
-                Search
-            </NavLink>
-
-            <NavLink 
-                className="nav-item nav-link" 
-                to="/anios"
-            >
-                Año
-            </NavLink>
         </div>
     </div>
 

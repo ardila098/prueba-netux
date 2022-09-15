@@ -43,29 +43,47 @@ console.log(pelicula,"oeeee")
 
   return (
    <>
-   
-   <h1>{id}</h1>
 
-   <h2>{id}</h2>
+   <div className="card-grid">
+   <div className='card'>
+   
+   {/* <h1>{id}</h1>
+
+   <h2>{id}</h2> */}
+
+<div>
 
    <img src={pelicula.Poster} alt="" />
 
-<h3>{pelicula.Title}</h3>
+</div>
 
-<h4>{pelicula.Year}</h4>
+<div>
 
+<h3><b>Nombre:</b>{pelicula.Title}</h3>
 
-
-
-
-
+<h4><b>Año:</b>{pelicula.Year}</h4>
 
 <button
-className='btn btn-outline'
+className='btn '
 onClick={onNavigateBack}
 >
-Back
+<b>Back</b>
 </button>
+
+</div>
+
+
+</div>
+
+
+   </div>
+
+
+
+
+
+
+
 
    </>
   )
