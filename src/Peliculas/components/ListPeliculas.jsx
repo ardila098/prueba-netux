@@ -1,15 +1,28 @@
 
 
-import { useFetchPeliculas } from '../hooks/useFetchPeliculas'
 import { PeliculasItem } from './PeliculasItem'
 import  '../css/card.css' 
+import { useEffect, useState } from 'react';
+import { getPeliculas } from '../helpers/getPeliculas';
 
 
 export const ListPeliculas = () => {
 
 
+  const [peliculas, setPeliculas] = useState([]);
+  useEffect(() => {
 
-    const { peliculas} = useFetchPeliculas()
+    ( async () => {
+      try {
+        const response = await getPeliculas();
+        setPeliculas(response)
+      } catch (error) {
+        console.log('err');
+        
+      }
+    })()
+  }, [])
+
 
 
   return (
@@ -17,9 +30,12 @@ export const ListPeliculas = () => {
 
 <>
 
+
+
+
 <div className="card-grid">
         {peliculas.map(( pelicula ) => (
-          <PeliculasItem key={pelicula.id} {...pelicula} />
+          <PeliculasItem key={pelicula.imdbID} {...pelicula} />
         ))}
       </div>
 

@@ -1,7 +1,8 @@
 
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-export const PeliculasItem = ({id,year,title,poster,}) => {
+export const PeliculasItem = ({imdbID,Year,Title,Poster,}) => {
 
 
 
@@ -12,11 +13,17 @@ export const PeliculasItem = ({id,year,title,poster,}) => {
 
 <div className='card'>
           
-          <img src={poster} alt={title} />
+          <img src={Poster} alt={Title} />
 
-          <p>{title}</p>
+          <p>{Title}</p>
 
-<h2>{year}</h2>
+<h2>{Year}</h2>
+
+
+
+<Link to={`/peliculas/${imdbID}`}>
+Mas..
+</Link>
 
 
     </div>

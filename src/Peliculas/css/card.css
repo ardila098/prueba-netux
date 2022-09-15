@@ -1,3 +1,31 @@
 
+.card-grid{
+
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+margin-top: 50px;
 
 
+}
+
+
+.card-grid div {
+display: grid;
+margin: auto;
+row-gap: 20px;
+
+}
+
+.card{
+
+width: 300px;
+
+}
+
+
+.card img{
+
+width: 250px;
+
+
+}

@@ -6,6 +6,7 @@ import { Navigate, Route, Routes } from 'react-router'
 import { Navbar } from '../../ui/components'
 import { AniosPage } from '../pages/aniosPage'
 import { EstrenosPage } from '../pages/EstrenosPage'
+import { PeliculaPage } from '../pages/PeliculaPage'
 
 import { PeliculasPage } from '../pages/PeliculasPage'
 import { SearchPage } from '../pages/SearchPage'
@@ -23,7 +24,7 @@ export const PeliculasRoute = () => {
           <Route path="estrenos" element={<EstrenosPage/>} />
           <Route path="search" element={<SearchPage/>} />
           <Route path="anios" element={<AniosPage/>} />
-          <Route path="pelicula/:id" element={<PeliculasPage />} />
+          <Route path="peliculas/:id" element={<PeliculaPage />} />
 
           <Route path="/" element={<Navigate to={"/peliculas"} />} />
         </Routes>
